@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banggia"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBangGia"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="#F44336"
+        android:text="BẢNG GIÁ VÀNG"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBangGia">
+
+        <TextView
+            android:id="@+id/lbLoaiVang"
+            style="@style/stroke"
+            android:text="LOẠI VÀNG"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/lbMuaVao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="40dp"
+            android:background="#F44336"
+            android:padding="10dp"
+            android:text="MUA VÀO"
+            android:textAlignment="center"
+            android:textColor="#FFEB3B" />
+
+        <TextView
+            android:id="@+id/lbBanRa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="40dp"
+            android:background="#F44336"
+            android:padding="10dp"
+            android:text="BÁN "
+            android:textAlignment="center"
+            android:textColor="#FFEB3B" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
